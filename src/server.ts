@@ -23,7 +23,8 @@ const server = async () => {
   try {
     // await connect(process.env.MONGO_URI);
     app.listen(port, () => {
-      console.log(`Books Review app listening on port ${port}`);
+      console.log(`Server is running on port ${port}`);
+      console.log(`Visit http://localhost:${port} to access the server.`);
     });
   } catch (error) {
     console.log(error);
